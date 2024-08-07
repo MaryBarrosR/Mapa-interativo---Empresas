@@ -1,689 +1,183 @@
-<!DOCTYPE html>
-<html>
-<head>
-    
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_1ce547db5e75f654eeceb02cd307b309 {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-            </style>
-        
-</head>
-<body>
-    
-    
-            <div class="folium-map" id="map_1ce547db5e75f654eeceb02cd307b309" ></div>
-        
-</body>
-<script>
-    
-    
-            var map_1ce547db5e75f654eeceb02cd307b309 = L.map(
-                "map_1ce547db5e75f654eeceb02cd307b309",
-                {
-                    center: [-23.55052, -46.633308],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 8,
-                    zoomControl: true,
-                    preferCanvas: false,
-                }
-            );
-
-            
-
-        
-    
-            var tile_layer_795cb159773f13b4c8cb450582489aba = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-            var marker_bd69b4ff1d6fd555f47fa112844cfdb3 = L.marker(
-                [-23.55052, -46.633308],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_d45cba366aa1790a8d3c70e4777a35ba = L.popup({"maxWidth": "100%"});
-
-        
-            var html_b374418fdaea22f1366ff24627440a79 = $(`<div id="html_b374418fdaea22f1366ff24627440a79" style="width: 100.0%; height: 100.0%;">São Paulo (SP): 30 empresas Sonaca (Aeroespacial) JBS (Alimentos) Givaudan (Alimentos) FCA (Automotivo) Ford (Automotivo) General Motors (Automotivo) Scania (Automotivo) Toyota (Automotivo) Volkswagen (Automotivo) Faurecia (Autopeças) Lear Corporation (Autopeças) Magna (Autopeças) Schlemmer (Autopeças) Sodecia (Autopeças) Valeo (Autopeças) Atramat (Equipamentos diversos) GRUNDFOS (Equipamentos diversos) NEOGEN (Equipamentos diversos) Phinia (Equipamentos diversos) SICK Sensor Intelligence (Equipamentos diversos) AGI Brasil (Equipamentos diversos) Ingersoll Rand (Equipamentos diversos) Orion Engineered Carbons (Químicos) Polipox (Químicos) Solvay (Químicos) Bostik (Químicos) Cerdia (Químicos) Roca (Químicos) Gerdau (Siderurgia) Takeda (Farmacêutico)</div>`)[0];
-            popup_d45cba366aa1790a8d3c70e4777a35ba.setContent(html_b374418fdaea22f1366ff24627440a79);
-        
-
-        marker_bd69b4ff1d6fd555f47fa112844cfdb3.bindPopup(popup_d45cba366aa1790a8d3c70e4777a35ba)
-        ;
-
-        
-    
-    
-            marker_bd69b4ff1d6fd555f47fa112844cfdb3.bindTooltip(
-                `<div>
-                     São Paulo (SP): 30 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_700a13ace5c386a87725d524a07ff600 = L.marker(
-                [-23.691433, -46.564568],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_5e309ffcd4daf47a58352858dc13fddb = L.popup({"maxWidth": "100%"});
-
-        
-            var html_d3b1a9e10770cfc791a8402f4b981cae = $(`<div id="html_d3b1a9e10770cfc791a8402f4b981cae" style="width: 100.0%; height: 100.0%;">São Bernardo do Campo (SP): 7 empresas FCA (Automotivo) Ford (Automotivo) Scania (Automotivo) Toyota (Automotivo) Volkswagen (Automotivo) Lear Corporation (Autopeças) Valeo (Autopeças)</div>`)[0];
-            popup_5e309ffcd4daf47a58352858dc13fddb.setContent(html_d3b1a9e10770cfc791a8402f4b981cae);
-        
-
-        marker_700a13ace5c386a87725d524a07ff600.bindPopup(popup_5e309ffcd4daf47a58352858dc13fddb)
-        ;
-
-        
-    
-    
-            marker_700a13ace5c386a87725d524a07ff600.bindTooltip(
-                `<div>
-                     São Bernardo do Campo (SP): 7 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_2af4998175ae590ea9df8c182f9b5952 = L.marker(
-                [-22.90556, -47.06083],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_e64e502361fea1d50f804d43e9b2efbc = L.popup({"maxWidth": "100%"});
-
-        
-            var html_59e62d8968c49a4b3c14b08676b82284 = $(`<div id="html_59e62d8968c49a4b3c14b08676b82284" style="width: 100.0%; height: 100.0%;">Campinas (SP): 7 empresas Bosch (Automotivo) Benteler (Autopeças) Marelli (Autopeças) Valeo (Autopeças) Beumer (Equipamentos diversos) De Dietrich (Equipamentos diversos) Bühler Group (Equipamentos diversos)</div>`)[0];
-            popup_e64e502361fea1d50f804d43e9b2efbc.setContent(html_59e62d8968c49a4b3c14b08676b82284);
-        
-
-        marker_2af4998175ae590ea9df8c182f9b5952.bindPopup(popup_e64e502361fea1d50f804d43e9b2efbc)
-        ;
-
-        
-    
-    
-            marker_2af4998175ae590ea9df8c182f9b5952.bindTooltip(
-                `<div>
-                     Campinas (SP): 7 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_ef6369e2ddb597319b22b265ef2f6767 = L.marker(
-                [-23.5015, -47.4526],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_dea2d2d8a815c63c24b850307e4647e9 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_00f225b4dab2f11ec9536c4aaa5d1864 = $(`<div id="html_00f225b4dab2f11ec9536c4aaa5d1864" style="width: 100.0%; height: 100.0%;">Sorocaba (SP): 8 empresas Bosch (Automotivo) Dana (Autopeças) Eberspacher (Autopeças) ZF Group (Autopeças) Johnsons Controls (Equipamentos diversos) Emerson (Equipamentos diversos) JCB (Maquinário civil/mineração) Dynapac (Maquinário civil/mineração)</div>`)[0];
-            popup_dea2d2d8a815c63c24b850307e4647e9.setContent(html_00f225b4dab2f11ec9536c4aaa5d1864);
-        
-
-        marker_ef6369e2ddb597319b22b265ef2f6767.bindPopup(popup_dea2d2d8a815c63c24b850307e4647e9)
-        ;
-
-        
-    
-    
-            marker_ef6369e2ddb597319b22b265ef2f6767.bindTooltip(
-                `<div>
-                     Sorocaba (SP): 8 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_bf0188bf6435a3fcefc60a9ad64f497f = L.marker(
-                [-22.7253, -47.6492],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_31360b651acd87ae70e43b81ee12442b = L.popup({"maxWidth": "100%"});
-
-        
-            var html_2e6bf18c8c9d8e1300ee2486679c3727 = $(`<div id="html_2e6bf18c8c9d8e1300ee2486679c3727" style="width: 100.0%; height: 100.0%;">Piracicaba (SP): 5 empresas Hyundai (Automotivo) Elring Klinger do Brasil (Autopeças) Hwashin (Autopeças) Hyster (Equipamentos diversos) Caterpillar (Maquinário civil/mineração)</div>`)[0];
-            popup_31360b651acd87ae70e43b81ee12442b.setContent(html_2e6bf18c8c9d8e1300ee2486679c3727);
-        
-
-        marker_bf0188bf6435a3fcefc60a9ad64f497f.bindPopup(popup_31360b651acd87ae70e43b81ee12442b)
-        ;
-
-        
-    
-    
-            marker_bf0188bf6435a3fcefc60a9ad64f497f.bindTooltip(
-                `<div>
-                     Piracicaba (SP): 5 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_c1be42a7aaf028d59c7b1c0c3d88adcc = L.marker(
-                [-23.1856, -46.8978],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_83c0c25ab3d91c85f3f7087a98a5c51b = L.popup({"maxWidth": "100%"});
-
-        
-            var html_e78fc9aa1b5274311f13dd489515d1a3 = $(`<div id="html_e78fc9aa1b5274311f13dd489515d1a3" style="width: 100.0%; height: 100.0%;">Jundiaí (SP): 3 empresas Plascar (Autopeças) Henkel (Químicos) Siemens (Equipamentos diversos)</div>`)[0];
-            popup_83c0c25ab3d91c85f3f7087a98a5c51b.setContent(html_e78fc9aa1b5274311f13dd489515d1a3);
-        
-
-        marker_c1be42a7aaf028d59c7b1c0c3d88adcc.bindPopup(popup_83c0c25ab3d91c85f3f7087a98a5c51b)
-        ;
-
-        
-    
-    
-            marker_c1be42a7aaf028d59c7b1c0c3d88adcc.bindTooltip(
-                `<div>
-                     Jundiaí (SP): 3 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_dd88ac04fc81c68503c70fd176db07e9 = L.marker(
-                [-23.5115, -46.8763],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_be008f4f9842b9fe992e635e6fa3ed05 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_ecfb85badd34e00b8d3f0e7fd0187d8b = $(`<div id="html_ecfb85badd34e00b8d3f0e7fd0187d8b" style="width: 100.0%; height: 100.0%;">Barueri (SP): 4 empresas Honeywell (Autopeças) Atlas Copco (Equipamentos diversos) Emerson (Equipamentos diversos) Ingersoll Rand (Equipamentos diversos)</div>`)[0];
-            popup_be008f4f9842b9fe992e635e6fa3ed05.setContent(html_ecfb85badd34e00b8d3f0e7fd0187d8b);
-        
-
-        marker_dd88ac04fc81c68503c70fd176db07e9.bindPopup(popup_be008f4f9842b9fe992e635e6fa3ed05)
-        ;
-
-        
-    
-    
-            marker_dd88ac04fc81c68503c70fd176db07e9.bindTooltip(
-                `<div>
-                     Barueri (SP): 4 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_b1d04230f5af0defbd92dc430e8638f9 = L.marker(
-                [-23.4538, -46.5333],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_ebbd5a661c91f47d04ace3787490e110 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_86e369f0672ffa28d254e2e788850125 = $(`<div id="html_86e369f0672ffa28d254e2e788850125" style="width: 100.0%; height: 100.0%;">Guarulhos (SP): 2 empresas Continental (Autopeças) Cummins (Autopeças)</div>`)[0];
-            popup_ebbd5a661c91f47d04ace3787490e110.setContent(html_86e369f0672ffa28d254e2e788850125);
-        
-
-        marker_b1d04230f5af0defbd92dc430e8638f9.bindPopup(popup_ebbd5a661c91f47d04ace3787490e110)
-        ;
-
-        
-    
-    
-            marker_b1d04230f5af0defbd92dc430e8638f9.bindTooltip(
-                `<div>
-                     Guarulhos (SP): 2 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_ff2f505ba74ae4bfa9fdd5e6bde406bd = L.marker(
-                [-23.0816, -47.2101],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_c1d3800cae3669424651aede0c7aebe1 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_80f06ab21ed81f44a0b32c109d99658f = $(`<div id="html_80f06ab21ed81f44a0b32c109d99658f" style="width: 100.0%; height: 100.0%;">Indaiatuba (SP): 2 empresas Toyota (Automotivo) John Deere (Máquinas Agrícolas)</div>`)[0];
-            popup_c1d3800cae3669424651aede0c7aebe1.setContent(html_80f06ab21ed81f44a0b32c109d99658f);
-        
-
-        marker_ff2f505ba74ae4bfa9fdd5e6bde406bd.bindPopup(popup_c1d3800cae3669424651aede0c7aebe1)
-        ;
-
-        
-    
-    
-            marker_ff2f505ba74ae4bfa9fdd5e6bde406bd.bindTooltip(
-                `<div>
-                     Indaiatuba (SP): 2 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_abca1083a972a5c031cc2c2c77588d40 = L.marker(
-                [-23.0059, -46.8414],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_8e1c53e3324b625919e6f08cdf985465 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_d73d98792797872fa818512d7980f466 = $(`<div id="html_d73d98792797872fa818512d7980f466" style="width: 100.0%; height: 100.0%;">Itatiba (SP): 2 empresas BorgWarner (Autopeças) Valeo (Autopeças)</div>`)[0];
-            popup_8e1c53e3324b625919e6f08cdf985465.setContent(html_d73d98792797872fa818512d7980f466);
-        
-
-        marker_abca1083a972a5c031cc2c2c77588d40.bindPopup(popup_8e1c53e3324b625919e6f08cdf985465)
-        ;
-
-        
-    
-    
-            marker_abca1083a972a5c031cc2c2c77588d40.bindTooltip(
-                `<div>
-                     Itatiba (SP): 2 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_e1e546c61b1a569fa611879297bc2d47 = L.marker(
-                [-22.8583, -47.22],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_a3c53acde82f69a580af1e52db5b3ef3 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_9714db116449d089b9fd6459fc831699 = $(`<div id="html_9714db116449d089b9fd6459fc831699" style="width: 100.0%; height: 100.0%;">Hortolândia (SP): 2 empresas Magneti Marelli (Autopeças) Marelli (Autopeças)</div>`)[0];
-            popup_a3c53acde82f69a580af1e52db5b3ef3.setContent(html_9714db116449d089b9fd6459fc831699);
-        
-
-        marker_e1e546c61b1a569fa611879297bc2d47.bindPopup(popup_a3c53acde82f69a580af1e52db5b3ef3)
-        ;
-
-        
-    
-    
-            marker_e1e546c61b1a569fa611879297bc2d47.bindTooltip(
-                `<div>
-                     Hortolândia (SP): 2 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_18856892e85f6639083d12033487f285 = L.marker(
-                [-21.2076, -50.4322],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_fe7f77b396e23ae8c9813f35f027f22c = L.popup({"maxWidth": "100%"});
-
-        
-            var html_4a4b8e5f86f14842ff53d2e1b6e1076f = $(`<div id="html_4a4b8e5f86f14842ff53d2e1b6e1076f" style="width: 100.0%; height: 100.0%;">Araçatuba (SP): 1 empresas Colormaq (Eletrodomésticos)</div>`)[0];
-            popup_fe7f77b396e23ae8c9813f35f027f22c.setContent(html_4a4b8e5f86f14842ff53d2e1b6e1076f);
-        
-
-        marker_18856892e85f6639083d12033487f285.bindPopup(popup_fe7f77b396e23ae8c9813f35f027f22c)
-        ;
-
-        
-    
-    
-            marker_18856892e85f6639083d12033487f285.bindTooltip(
-                `<div>
-                     Araçatuba (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_a284317bce6e9fa2537ad0776f14aabc = L.marker(
-                [-22.9707, -46.9954],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_5e290500164dc715422962fe137597e4 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_a760e271ef101e4b5cad284a52fcf5cf = $(`<div id="html_a760e271ef101e4b5cad284a52fcf5cf" style="width: 100.0%; height: 100.0%;">Valinhos (SP): 1 empresas Eaton (Autopeças)</div>`)[0];
-            popup_5e290500164dc715422962fe137597e4.setContent(html_a760e271ef101e4b5cad284a52fcf5cf);
-        
-
-        marker_a284317bce6e9fa2537ad0776f14aabc.bindPopup(popup_5e290500164dc715422962fe137597e4)
-        ;
-
-        
-    
-    
-            marker_a284317bce6e9fa2537ad0776f14aabc.bindTooltip(
-                `<div>
-                     Valinhos (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_a5954fe5261cf8604bdfe6377ed95ab9 = L.marker(
-                [-23.3051, -45.9653],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_14615d3d9efee52b334897450f78d3c1 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_b222c442b444c4351a7a1e03eba8e757 = $(`<div id="html_b222c442b444c4351a7a1e03eba8e757" style="width: 100.0%; height: 100.0%;">Jacareí (SP): 1 empresas Parker Hannifin (Autopeças)</div>`)[0];
-            popup_14615d3d9efee52b334897450f78d3c1.setContent(html_b222c442b444c4351a7a1e03eba8e757);
-        
-
-        marker_a5954fe5261cf8604bdfe6377ed95ab9.bindPopup(popup_14615d3d9efee52b334897450f78d3c1)
-        ;
-
-        
-    
-    
-            marker_a5954fe5261cf8604bdfe6377ed95ab9.bindTooltip(
-                `<div>
-                     Jacareí (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_4b6670a2120968bf08c5e93d1460a680 = L.marker(
-                [-23.2134, -46.8288],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_b1dae9ca6c0b7e34b818ac1bf3d0eb2b = L.popup({"maxWidth": "100%"});
-
-        
-            var html_2a1dd93e16ff37bdc86141e894aef3cd = $(`<div id="html_2a1dd93e16ff37bdc86141e894aef3cd" style="width: 100.0%; height: 100.0%;">Várzea Paulista (SP): 1 empresas Continental (Autopeças)</div>`)[0];
-            popup_b1dae9ca6c0b7e34b818ac1bf3d0eb2b.setContent(html_2a1dd93e16ff37bdc86141e894aef3cd);
-        
-
-        marker_4b6670a2120968bf08c5e93d1460a680.bindPopup(popup_b1dae9ca6c0b7e34b818ac1bf3d0eb2b)
-        ;
-
-        
-    
-    
-            marker_4b6670a2120968bf08c5e93d1460a680.bindTooltip(
-                `<div>
-                     Várzea Paulista (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_1e043f87fa70f45b96b0d9465d8ecc03 = L.marker(
-                [-23.8952, -46.4255],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_0d4f7f9b2aad4facda1a45d5253f4cb7 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_c02195a833bfaafae244f0023042f521 = $(`<div id="html_c02195a833bfaafae244f0023042f521" style="width: 100.0%; height: 100.0%;">Cubatão (SP): 1 empresas Usiminas (Siderurgia)</div>`)[0];
-            popup_0d4f7f9b2aad4facda1a45d5253f4cb7.setContent(html_c02195a833bfaafae244f0023042f521);
-        
-
-        marker_1e043f87fa70f45b96b0d9465d8ecc03.bindPopup(popup_0d4f7f9b2aad4facda1a45d5253f4cb7)
-        ;
-
-        
-    
-    
-            marker_1e043f87fa70f45b96b0d9465d8ecc03.bindTooltip(
-                `<div>
-                     Cubatão (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_a72f7bece76d5ea31f5bf879b7f46613 = L.marker(
-                [-23.5208, -46.1854],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_233c806ecd13c32e65b68832764b836f = L.popup({"maxWidth": "100%"});
-
-        
-            var html_6944e77055c980b2db29f878012e1ac5 = $(`<div id="html_6944e77055c980b2db29f878012e1ac5" style="width: 100.0%; height: 100.0%;">Mogi das Cruzes (SP): 1 empresas AGCO (Máquinas Agrícolas)</div>`)[0];
-            popup_233c806ecd13c32e65b68832764b836f.setContent(html_6944e77055c980b2db29f878012e1ac5);
-        
-
-        marker_a72f7bece76d5ea31f5bf879b7f46613.bindPopup(popup_233c806ecd13c32e65b68832764b836f)
-        ;
-
-        
-    
-    
-            marker_a72f7bece76d5ea31f5bf879b7f46613.bindTooltip(
-                `<div>
-                     Mogi das Cruzes (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_c5bae7c07fdd56a899dbae9adfbe6648 = L.marker(
-                [-22.1072, -50.1762],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_99f469f7098f7e7fdf8cd35ce4a33925 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_e1f4de541c84c2ebe5d9eb8dc0f39432 = $(`<div id="html_e1f4de541c84c2ebe5d9eb8dc0f39432" style="width: 100.0%; height: 100.0%;">Pompeia (SP): 1 empresas JACTO (Máquinas Agrícolas)</div>`)[0];
-            popup_99f469f7098f7e7fdf8cd35ce4a33925.setContent(html_e1f4de541c84c2ebe5d9eb8dc0f39432);
-        
-
-        marker_c5bae7c07fdd56a899dbae9adfbe6648.bindPopup(popup_99f469f7098f7e7fdf8cd35ce4a33925)
-        ;
-
-        
-    
-    
-            marker_c5bae7c07fdd56a899dbae9adfbe6648.bindTooltip(
-                `<div>
-                     Pompeia (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_a989950e27418c88be0f2f241103bf15 = L.marker(
-                [-21.6025, -48.3645],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_d7115058a47a15857b5a82c623b7d83c = L.popup({"maxWidth": "100%"});
-
-        
-            var html_abbdd594ea20f4d8fb0c2312302f4123 = $(`<div id="html_abbdd594ea20f4d8fb0c2312302f4123" style="width: 100.0%; height: 100.0%;">Matão (SP): 1 empresas BALDAN IMPLEMENTOS AGRICOLAS (Maquinário agrícola)</div>`)[0];
-            popup_d7115058a47a15857b5a82c623b7d83c.setContent(html_abbdd594ea20f4d8fb0c2312302f4123);
-        
-
-        marker_a989950e27418c88be0f2f241103bf15.bindPopup(popup_d7115058a47a15857b5a82c623b7d83c)
-        ;
-
-        
-    
-    
-            marker_a989950e27418c88be0f2f241103bf15.bindTooltip(
-                `<div>
-                     Matão (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_80e47d0151ffb539a3fd8786efe709c7 = L.marker(
-                [-22.8219, -47.2662],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_a31107aa6d6728745f615aae9c35d2d4 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_2a1666a39df4d8470b0fa0ee3a6c989f = $(`<div id="html_2a1666a39df4d8470b0fa0ee3a6c989f" style="width: 100.0%; height: 100.0%;">Sumaré (SP): 1 empresas 3M (Químicos)</div>`)[0];
-            popup_a31107aa6d6728745f615aae9c35d2d4.setContent(html_2a1666a39df4d8470b0fa0ee3a6c989f);
-        
-
-        marker_80e47d0151ffb539a3fd8786efe709c7.bindPopup(popup_a31107aa6d6728745f615aae9c35d2d4)
-        ;
-
-        
-    
-    
-            marker_80e47d0151ffb539a3fd8786efe709c7.bindTooltip(
-                `<div>
-                     Sumaré (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_f949dff830b5f9e1ea7e23a02af53f06 = L.marker(
-                [-21.1699, -47.8099],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_372a9f1131246d1557943127356b282b = L.popup({"maxWidth": "100%"});
-
-        
-            var html_2f4cd69a0f446292e7a3e19c49d97127 = $(`<div id="html_2f4cd69a0f446292e7a3e19c49d97127" style="width: 100.0%; height: 100.0%;">Ribeirão Preto (SP): 1 empresas 3M (Químicos)</div>`)[0];
-            popup_372a9f1131246d1557943127356b282b.setContent(html_2f4cd69a0f446292e7a3e19c49d97127);
-        
-
-        marker_f949dff830b5f9e1ea7e23a02af53f06.bindPopup(popup_372a9f1131246d1557943127356b282b)
-        ;
-
-        
-    
-    
-            marker_f949dff830b5f9e1ea7e23a02af53f06.bindTooltip(
-                `<div>
-                     Ribeirão Preto (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_1e5538490ffca31b356de9ff4a32252c = L.marker(
-                [-23.5425, -46.3109],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_fbe58371737dc4df495f67746c6583b8 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_07b9ab76e27d2d8ee400585e0cd70045 = $(`<div id="html_07b9ab76e27d2d8ee400585e0cd70045" style="width: 100.0%; height: 100.0%;">Suzano (SP): 1 empresas Komatsu (Maquinário civil/mineração)</div>`)[0];
-            popup_fbe58371737dc4df495f67746c6583b8.setContent(html_07b9ab76e27d2d8ee400585e0cd70045);
-        
-
-        marker_1e5538490ffca31b356de9ff4a32252c.bindPopup(popup_fbe58371737dc4df495f67746c6583b8)
-        ;
-
-        
-    
-    
-            marker_1e5538490ffca31b356de9ff4a32252c.bindTooltip(
-                `<div>
-                     Suzano (SP): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_697136fb4a98bf2ee6930c68ead885e2 = L.marker(
-                [-16.3281, -48.9534],
-                {}
-            ).addTo(map_1ce547db5e75f654eeceb02cd307b309);
-        
-    
-        var popup_68c223a39d197af16c17143e03652623 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_fe57c72350fda5738917c55965f13ef9 = $(`<div id="html_fe57c72350fda5738917c55965f13ef9" style="width: 100.0%; height: 100.0%;">Anápolis (GO): 1 empresas GRUPO NC (Farmacêutico)</div>`)[0];
-            popup_68c223a39d197af16c17143e03652623.setContent(html_fe57c72350fda5738917c55965f13ef9);
-        
-
-        marker_697136fb4a98bf2ee6930c68ead885e2.bindPopup(popup_68c223a39d197af16c17143e03652623)
-        ;
-
-        
-    
-    
-            marker_697136fb4a98bf2ee6930c68ead885e2.bindTooltip(
-                `<div>
-                     Anápolis (GO): 1 empresas
-                 </div>`,
-                {"sticky": true}
-            );
-        
-</script>
-</html>
+import folium
+
+# Cria um mapa centralizado em São Paulo
+mapa = folium.Map(location=[-23.55052, -46.633308], zoom_start=8)
+
+# Dados das empresas organizadas por cidade com coordenadas aproximadas
+empresas = {
+    "São Paulo (SP)": [
+        ("Sonaca", "Aeroespacial"),
+        ("JBS", "Alimentos"),
+        ("Givaudan", "Alimentos"),
+        ("FCA", "Automotivo"),
+        ("Ford", "Automotivo"),
+        ("General Motors", "Automotivo"),
+        ("Scania", "Automotivo"),
+        ("Toyota", "Automotivo"),
+        ("Volkswagen", "Automotivo"),
+        ("Faurecia", "Autopeças"),
+        ("Lear Corporation", "Autopeças"),
+        ("Magna", "Autopeças"),
+        ("Schlemmer", "Autopeças"),
+        ("Sodecia", "Autopeças"),
+        ("Valeo", "Autopeças"),
+        ("Atramat", "Equipamentos diversos"),
+        ("GRUNDFOS", "Equipamentos diversos"),
+        ("NEOGEN", "Equipamentos diversos"),
+        ("Phinia", "Equipamentos diversos"),
+        ("SICK Sensor Intelligence", "Equipamentos diversos"),
+        ("AGI Brasil", "Equipamentos diversos"),
+        ("Ingersoll Rand", "Equipamentos diversos"),
+        ("Orion Engineered Carbons", "Químicos"),
+        ("Polipox", "Químicos"),
+        ("Solvay", "Químicos"),
+        ("Bostik", "Químicos"),
+        ("Cerdia", "Químicos"),
+        ("Roca", "Químicos"),
+        ("Gerdau", "Siderurgia"),
+        ("Takeda", "Farmacêutico")
+    ],
+    "São Bernardo do Campo (SP)": [
+        ("FCA", "Automotivo"),
+        ("Ford", "Automotivo"),
+        ("Scania", "Automotivo"),
+        ("Toyota", "Automotivo"),
+        ("Volkswagen", "Automotivo"),
+        ("Lear Corporation", "Autopeças"),
+        ("Valeo", "Autopeças")
+    ],
+    "Campinas (SP)": [
+        ("Bosch", "Automotivo"),
+        ("Benteler", "Autopeças"),
+        ("Marelli", "Autopeças"),
+        ("Valeo", "Autopeças"),
+        ("Beumer", "Equipamentos diversos"),
+        ("De Dietrich", "Equipamentos diversos"),
+        ("Bühler Group", "Equipamentos diversos")
+    ],
+    "Sorocaba (SP)": [
+        ("Bosch", "Automotivo"),
+        ("Dana", "Autopeças"),
+        ("Eberspacher", "Autopeças"),
+        ("ZF Group", "Autopeças"),
+        ("Johnsons Controls", "Equipamentos diversos"),
+        ("Emerson", "Equipamentos diversos"),
+        ("JCB", "Maquinário civil/mineração"),
+        ("Dynapac", "Maquinário civil/mineração")
+    ],
+    "Piracicaba (SP)": [
+        ("Hyundai", "Automotivo"),
+        ("Elring Klinger do Brasil", "Autopeças"),
+        ("Hwashin", "Autopeças"),
+        ("Hyster", "Equipamentos diversos"),
+        ("Caterpillar", "Maquinário civil/mineração")
+    ],
+    "Jundiaí (SP)": [
+        ("Plascar", "Autopeças"),
+        ("Henkel", "Químicos"),
+        ("Siemens", "Equipamentos diversos")
+    ],
+    "Barueri (SP)": [
+        ("Honeywell", "Autopeças"),
+        ("Atlas Copco", "Equipamentos diversos"),
+        ("Emerson", "Equipamentos diversos"),
+        ("Ingersoll Rand", "Equipamentos diversos")
+    ],
+    "Guarulhos (SP)": [
+        ("Continental", "Autopeças"),
+        ("Cummins", "Autopeças")
+    ],
+    "Indaiatuba (SP)": [
+        ("Toyota", "Automotivo"),
+        ("John Deere", "Máquinas Agrícolas")
+    ],
+    "Itatiba (SP)": [
+        ("BorgWarner", "Autopeças"),
+        ("Valeo", "Autopeças")
+    ],
+    "Hortolândia (SP)": [
+        ("Magneti Marelli", "Autopeças"),
+        ("Marelli", "Autopeças")
+    ],
+    "Araçatuba (SP)": [
+        ("Colormaq", "Eletrodomésticos")
+    ],
+    "Valinhos (SP)": [
+        ("Eaton", "Autopeças")
+    ],
+    "Jacareí (SP)": [
+        ("Parker Hannifin", "Autopeças")
+    ],
+    "Várzea Paulista (SP)": [
+        ("Continental", "Autopeças")
+    ],
+    "Cubatão (SP)": [
+        ("Usiminas", "Siderurgia")
+    ],
+    "Mogi das Cruzes (SP)": [
+        ("AGCO", "Máquinas Agrícolas")
+    ],
+    "Pompeia (SP)": [
+        ("JACTO", "Máquinas Agrícolas")
+    ],
+    "Matão (SP)": [
+        ("BALDAN IMPLEMENTOS AGRICOLAS", "Maquinário agrícola")
+    ],
+    "Sumaré (SP)": [
+        ("3M", "Químicos")
+    ],
+    "Ribeirão Preto (SP)": [
+        ("3M", "Químicos")
+    ],
+    "Suzano (SP)": [
+        ("Komatsu", "Maquinário civil/mineração")
+    ],
+    "Anápolis (GO)": [
+        ("GRUPO NC", "Farmacêutico")
+    ]
+}
+
+# Coordenadas aproximadas das cidades
+coordenadas_cidades = {
+    "São Paulo (SP)": [-23.55052, -46.633308],
+    "São Bernardo do Campo (SP)": [-23.691433, -46.564568],
+    "Campinas (SP)": [-22.90556, -47.06083],
+    "Sorocaba (SP)": [-23.5015, -47.4526],
+    "Piracicaba (SP)": [-22.7253, -47.6492],
+    "Jundiaí (SP)": [-23.1856, -46.8978],
+    "Barueri (SP)": [-23.5115, -46.8763],
+    "Guarulhos (SP)": [-23.4538, -46.5333],
+    "Indaiatuba (SP)": [-23.0816, -47.2101],
+    "Itatiba (SP)": [-23.0059, -46.8414],
+    "Hortolândia (SP)": [-22.8583, -47.22],
+    "Araçatuba (SP)": [-21.2076, -50.4322],
+    "Valinhos (SP)": [-22.9707, -46.9954],
+    "Jacareí (SP)": [-23.3051, -45.9653],
+    "Várzea Paulista (SP)": [-23.2134, -46.8288],
+    "Cubatão (SP)": [-23.8952, -46.4255],
+    "Mogi das Cruzes (SP)": [-23.5208, -46.1854],
+    "Pompeia (SP)": [-22.1072, -50.1762],
+    "Matão (SP)": [-21.6025, -48.3645],
+    "Sumaré (SP)": [-22.8219, -47.2662],
+    "Ribeirão Preto (SP)": [-21.1699, -47.8099],
+    "Suzano (SP)": [-23.5425, -46.3109],
+    "Anápolis (GO)": [-16.3281, -48.9534]
+}
+
+# Função para adicionar marcadores no mapa
+def adicionar_marcadores(mapa, empresas, coordenadas_cidades):
+    for cidade, infos in empresas.items():
+        for empresa, industria in infos:
+            folium.Marker(
+                location=coordenadas_cidades[cidade],
+                popup=f"{empresa} ({industria}) - {cidade}",
+                tooltip=empresa
+            ).add_to(mapa)
+
+# Adiciona os marcadores ao mapa
+adicionar_marcadores(mapa, empresas, coordenadas_cidades)
+
+# Salva o mapa em um arquivo HTML
+mapa.save("/mnt/data/mapa_empresas.html")
+
+"/mnt/data/mapa_empresas.html"
